@@ -11,7 +11,10 @@
     {
         devShells."x86_64-linux".default = with pkgs; mkShell {
             packages = with pkgs; [
-                stack
+                alex
+                cabal-install
+                ghc
+                happy
             ];
         };
     };

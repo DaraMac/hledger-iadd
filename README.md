@@ -22,6 +22,21 @@ This project improves in the following ways on hledger's `add` command:
 Also see the user guide under [Usage](#usage).
 
 ## Installation
+
+## My Build
+For the latest version.
+The nix flake has the dependencies.
+
+    cabal install --only-dependencies
+    cabal configure --bindir ~/bin
+    cabal build
+
+The binary was then located inside the working root directory at:
+    `dist-newstyle/build/x86_64-linux/ghc-9.8.4/hledger-iadd-1.3.21/x/hledger-iadd/build/hledger-iadd/hledger-iadd`
+
+I'm not even sure if that `configure` step is doing anything.
+Certainly there's no `~/bin` directory created anyway.
+
 ### Latest release
 #### Archlinux
 
